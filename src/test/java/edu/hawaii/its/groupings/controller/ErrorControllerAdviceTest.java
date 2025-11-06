@@ -56,7 +56,7 @@ public class ErrorControllerAdviceTest {
 
         // Stub out a logged-in user
         User mockUser = mock(User.class);
-        when(mockUser.getUid()).thenReturn("winnie-pooh");
+        when(mockUser.getUid()).thenReturn("testiwta"); // Documented staff user with admin role
         when(userContextService.getCurrentUser()).thenReturn(mockUser);
     }
 
